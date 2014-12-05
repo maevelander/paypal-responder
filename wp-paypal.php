@@ -5,7 +5,7 @@
   Plugin URI: http://www.wordpress.org/extend/plugins/paypal-responder
   Description: A really simple PayPal plugin. It processes payment for a product via PayPal, then sends an email responder to the customer and returns them to a URL of your choice. That's it.
   Author: Enigma Digital
-  Version: 1.1
+  Version: 1.2
   Author URI: http://www.enigmaweb.com.au
  */
 
