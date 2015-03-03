@@ -5,7 +5,7 @@
   Plugin URI: http://www.wordpress.org/extend/plugins/paypal-responder
   Description: A really simple PayPal plugin. It processes payment for a product via PayPal, then sends an email responder to the customer and returns them to a URL of your choice. That's it.
   Author: Enigma Digital
-  Version: 1.1
+  Version: 1.2
   Author URI: http://www.enigmaweb.com.au
  */
 
@@ -94,6 +94,7 @@ function wp_paypal_product($atts) {
 
     $output = '<form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 		<input type="hidden" name="cmd" value="_xclick">
+		<input type="hidden" name="bn" value="AngellEYE_SP_PayPal_Responder" />
 		<input type="hidden" name="business" value="' . $paypalID . '">
 		<input type="hidden" name="return" value="' . $return_url . '">
 		<input type="hidden" name="currency_code" value="' . $currency . '">
